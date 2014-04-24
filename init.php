@@ -7,4 +7,7 @@
  * @package EDK
  */
 
-$themeInfo = array("name" => "Prime (Caldari Version)", "info"=>"By Vecati");
+$themeInfo = array(
+  'name' => 'Prime (Caldari Version)',
+  'info'=> 'By Vecati',
+);
