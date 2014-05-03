@@ -52,7 +52,7 @@
     {if $context_html}
       <div id="context">
         {section name=item loop=$context_divs}
-          <div class="context_element" id="context_{$smarty.section.item.index}">{$context_divs[item]}</div>
+          <div class="context-element" id="context-{$smarty.section.item.index}">{$context_divs[item]}</div>
         {/section}
       </div><!-- /#context -->
     {/if}
