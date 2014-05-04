@@ -1,7 +1,7 @@
 /* Prime theme - Caldari version - EDK4 */
 
 body {
-  font-family: Verdana, Bitstream Vera Sans, Arial, Helvetica;
+  font: normal 12px/1.5 Verdana, 'Bitstream Vera Sans', Arial, Helvetica;
   margin: 0;
   color: #ddd;
   padding: 0;
@@ -38,7 +38,7 @@ body {
 
 .navigation td {
   text-align: center;
-  vertical-align: top;
+  vertical-align: middle;
 }
 
 .navigation a {
@@ -86,14 +86,13 @@ body {
 }
 
 #context {
-  float: right;
+  float: left;
   padding: 10px 10px 0 0;
-  width: 145px;
 }
 
-.context-element {
-  margin-bottom: 10px;
-  width: 145px;
+#context,
+.context-element .kb-table {
+  width: 140px;
 }
 
 #footer {
@@ -181,7 +180,6 @@ body {
 
 input, button, select {
   border: 1px solid #464646;
-  font-size: 12px;
   background-color: #000;
   color: #fff;
 }
@@ -190,14 +188,12 @@ form {
   display: block;
   margin-top: 0;
   border: 0 solid #eee;
-  font-size: 12px;
   color: #fff;
 }
 
 textarea {
   color: #fff;
   background: #000;
-  font-size: 12px;
   border: 1px solid #464646;
   font-family: Verdana, Bitstream Vera Sans, Arial, Helvetica;
 }
@@ -238,7 +234,6 @@ div.bar-red {
 
 .box-title {
   background: #333;
-  font-size: 12px;
   font-weight: bold;
   height: 20px;
   text-align: center;
@@ -271,7 +266,6 @@ div.bar-red {
 /* caption over boxes - Involved parties */
 .block-header {
   color: #fff;
-  font-size: 12px;
   font-weight: bold;
   margin-bottom: 10px;
   margin-top: 10px;
@@ -281,7 +275,6 @@ div.bar-red {
 .block-header2 {
   border-bottom: 1px solid #414141;
   color: #fff;
-  font-size: 12px;
   font-weight: bold;
   margin-bottom: 10px;
   margin-top: 10px;
@@ -315,6 +308,10 @@ textarea.killmail {
 .kb-table-rows > tbody > tr.kb-table-row-kill:nth-child(even),
 .kb-table-row-slot {
   background: url('data:images/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3gUDBx8LYXI28gAAAA1JREFUCNdj+P//Pw8ACQgDCoLntIwAAAAASUVORK5CYII=');
+}
+
+.kb-table-rows > tbody > tr.kb-table-row-kill:hover {
+  background: #0083cc;
 }
 
 .kb-table-row-even {
@@ -385,14 +382,14 @@ td.battleship {
   padding: 2px;
 }
 
-td.kb-table-imgcell {
+.kb-table-imgcell {
   height: 32px;
   padding: 0;
-  vertical-align: middle;
+  text-align: center;
   width: 32px;
 }
 
-td.kb-table-imgcell > img {
+.kb-table-imgcell img {
   margin-bottom: -3px;
 }
 
@@ -411,7 +408,6 @@ td.kb-table-imgcell > img {
   background-repeat: no-repeat;
   border-bottom: 1px solid #414141;
   color: #ccc;
-  font-size: 12px;
   font-weight: bold;
   margin-bottom: 10px;
   margin-top: 10px;
@@ -425,7 +421,6 @@ td.kb-table-imgcell > img {
   background-repeat: no-repeat;
   border-bottom: 1px solid #414141;
   color: #ccc;
-  font-size: 12px;
   font-weight: bold;
   margin-bottom: 10px;
   margin-top: 10px;
@@ -439,7 +434,6 @@ td.kb-table-imgcell > img {
   background-repeat: no-repeat;
   border-bottom: 1px solid #414141;
   color: #ccc;
-  font-size: 12px;
   font-weight: bold;
   margin-bottom: 10px;
   margin-top: 10px;
@@ -453,7 +447,6 @@ td.kb-table-imgcell > img {
   background-repeat: no-repeat;
   border-bottom: 1px solid #414141;
   color: #ccc;
-  font-size: 12px;
   font-weight: bold;
   margin-bottom: 10px;
   margin-top: 10px;
@@ -547,7 +540,6 @@ a:hover {
   border: none;
   color: #ccc;
   font-family: Arial, Helvetica, sans-serif;
-  font-size: 12px;
   margin-top: 5px;
 }
 
@@ -569,7 +561,6 @@ a:hover {
   clear: left;
   color: #ccc;
   float: left;
-  font-size: 12px;
   margin-top: 15px;
   width: 250px;
 }
@@ -587,7 +578,6 @@ a:hover {
   border: 0;
   color: #ccc;
   font-family: Arial, Helvetica, sans-serif;
-  font-size: 12px;
 }
 
 .popup-table {
@@ -617,17 +607,6 @@ a:hover {
   text-align: right;
 }
 
-.kb-table-rows > tbody > tr.kb-table-row-kill:hover {
-  background: #0083cc;
-  color: #fff;
-  cursor: pointer;
-}
-
-.kb-table-rows > tbody > tr.kb-table-row-loss:hover {
-  background: #dd9300;
-  color: #222;
-  cursor: pointer;
-}
 
 div.kb-shiptype {
   float: left;
@@ -642,7 +621,6 @@ div.kb-shipicon {
 
 td.kb-shipfilter {
   font-family: Verdana,Tahoma;
-  font-size: 12px;
 }
 
 a.kb-shipclass {
@@ -660,14 +638,9 @@ a.kb-shipclass:hover {
 }
 
 a.kb-contract {
-  font-size: 12px;
 }
 
 .stats {
-  margin-bottom: 5px;
-}
-
-.summarytable {
   margin-bottom: 5px;
 }
 
@@ -842,7 +815,6 @@ td.contract-logo {
 .kb-box {
   border-spacing: 1px;
   margin-bottom: 10px;
-  width: 150px;
 }
 
 .kb-box > tr > td {
@@ -1039,9 +1011,11 @@ table.awardbox table {
 }
 
 .corp-detail .description {
-  height: 100px;
-  overflow: auto;
   width: 100%;
+}
+
+.corp-detail .description * {
+  font-size: inherit;
 }
 
 .pilot-detail.stats > table {
@@ -1300,6 +1274,11 @@ td.finalblow {
 .kb-table-rows > tbody > tr.kb-table-row-loss:nth-child(even),
 .kb-table-rows > tbody > tr.kb-table-row-loss:nth-child(odd) {
   background: url('data:images/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3gUDBx0vb0ewoQAAAA1JREFUCNdjSGBjSAMAAf0AzWeJoD4AAAAASUVORK5CYII=');
+}
+
+.kb-table-rows > tbody > tr.kb-table-row-loss:hover {
+  background: #dd9300;
+  color: #222;
 }
 
 .kl-detail-shipdetails tr.totalloss > td:first-child {
