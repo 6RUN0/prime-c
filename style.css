@@ -58,12 +58,9 @@ body {
   -moz-border-radius: 5px;
   -webkit-border-radius: 5px;
   border-radius: 5px;
-  -moz-box-shadow:
-    0 0 11px #000;
-  -webkit-box-shadow:
-    0 0 11px #000;
-  box-shadow:
-    0 0 11px #000;
+  -moz-box-shadow: 0 0 11px #000;
+  -webkit-box-shadow: 0 0 11px #000;
+  box-shadow: 0 0 11px #000;
   margin-top: 20px;
   margin-bottom: 10px;
 }
@@ -80,7 +77,6 @@ body {
 
 #content {
   float: left;
-  font-size: 11px;
   padding: 10px;
   width: 785px;
 }
@@ -99,13 +95,13 @@ body {
   border-top: 1px solid #181818;
   color: #858585;
   clear: both;
-  padding: 0 0 0 10px;
 }
 
 /* Common style */
 .wrapper {
-  width: 980px;
   margin: 0 auto;
+  overflow: hidden;
+  width: 980px;
 }
 
 .section {
@@ -123,13 +119,88 @@ body {
   padding: 0;
 }
 
-/* !!! Check it !!! */
+.smalltext {
+  font-size: 10px;
+}
 
-.smalltext,
 .middletext {
   font-size: 11px;
-  font-family: Tahoma, sans-serif;
 }
+
+/* Form items */
+
+input,
+button,
+select,
+textarea {
+  -khtml-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+  color: #e0e0e0;
+  margin: 3px;
+  padding: 3px;
+}
+
+input[type="submit"],
+input[type="reset"],
+button {
+  background: rgba(165, 13, 13, 0.8);
+  border: 1px solid rgba(165, 13, 13, 0.8);
+  -moz-box-shadow:
+    2px 0 2px rgba(165, 13, 13, .3),
+    -2px 0 2px rgba(165, 13, 13, .3),
+    0 2px 2px rgba(165, 13, 13, .3);
+  -webkit-box-shadow:
+    2px 0 2px rgba(165, 13, 13, .3),
+    -2px 0 2px rgba(165, 13, 13, .3),
+    0 2px 2px rgba(165, 13, 13, .3);
+  box-shadow:
+    2px 0 2px rgba(165, 13, 13, .3),
+    -2px 0 2px rgba(165, 13, 13, .3),
+    0 2px 2px rgba(165, 13, 13, .3);
+  cursor: pointer;
+  text-shadow: 1px 1px #000;
+}
+
+input[type="submit"]:active,
+input[type="reset"]:active,
+button:active {
+  -moz-box-shadow: 0 0 2px rgba(165, 13, 13, .6);
+  -webkit-box-shadow: 0 0 2px rgba(165, 13, 13, .6);
+  box-shadow: 0 0 2px rgba(165, 13, 13, .6);
+  position: relative;
+  top: 1px;
+}
+
+input[type="text"],
+input[type="password"],
+select,
+textarea {
+  background: rgba(0, 0, 0, .7);
+  border: 1px solid rgba(255, 255, 255, .5);
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus,
+textarea:focus {
+  -moz-box-shadow: 0 0 5px rgba(255, 255, 255, .5);
+  -webkit-box-shadow: 0 0 5px rgba(255, 255, 255, .5);
+  box-shadow: 0 0 5px rgba(255, 255, 255, .5);
+}
+
+/* ?a=admin_value_fetch */
+#turl {
+  width: 98%;
+}
+
+/* ?a=admin_api */
+#keyname,
+#keyid,
+#keycode {
+  width: 90%;
+}
+/* !!! Check it !!! */
 
 /*#userarea {
   font-size: 10px;
@@ -178,25 +249,13 @@ body {
   text-align: center;
 }
 
-input, button, select {
-  border: 1px solid #464646;
-  background-color: #000;
-  color: #fff;
-}
-
-form {
+/*form {
   display: block;
   margin-top: 0;
   border: 0 solid #eee;
   color: #fff;
-}
+}*/
 
-textarea {
-  color: #fff;
-  background: #000;
-  border: 1px solid #464646;
-  font-family: Verdana, Bitstream Vera Sans, Arial, Helvetica;
-}
 
 
 
@@ -281,15 +340,6 @@ div.bar-red {
   padding-bottom: 5px;
 }
 
-.f_killmail {
-  font-size: 10px;
-}
-
-textarea.killmail {
-  font-size: 11px;
-}
-
-
 .kb-table-title {
   height: 10px;
 }
@@ -369,17 +419,11 @@ td.avatar-name {
 
 td.killmail {
   color: #ddd;
-  font-family: "Courier New", Courier;
   font-size: 11px;
 }
 
 td.battleship {
   background: #dd9300;
-}
-
-.kb-table td,
-.kb-table th {
-  padding: 2px;
 }
 
 .kb-table-imgcell {
@@ -529,7 +573,7 @@ a:hover {
   color: #fff;
   text-decoration: underline;
 }
-
+/*
 .comment,
 .comment-button {
   -khtml-border-radius: 10px;
@@ -539,7 +583,6 @@ a:hover {
   background: url('data:images/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3gUDBx4aEtknQQAAAA1JREFUCNdj6F60PA4ABcMCM0nnyxgAAAAASUVORK5CYII=');
   border: none;
   color: #ccc;
-  font-family: Arial, Helvetica, sans-serif;
   margin-top: 5px;
 }
 
@@ -555,7 +598,7 @@ a:hover {
 .comment-button:focus {
   border-color: #fff;
 }
-
+*/
 #comments-wrap {
   border-top: #333 thin solid;
   clear: left;
@@ -577,7 +620,6 @@ a:hover {
   background-color: #000;
   border: 0;
   color: #ccc;
-  font-family: Arial, Helvetica, sans-serif;
 }
 
 .popup-table {
@@ -617,10 +659,6 @@ div.kb-shiptype {
 div.kb-shipicon {
   float: right;
   height: 32px;
-}
-
-td.kb-shipfilter {
-  font-family: Verdana,Tahoma;
 }
 
 a.kb-shipclass {
@@ -825,9 +863,9 @@ td.contract-logo {
   text-align: center;
 }
 
-img {
-  border: 0;
-}
+/*img {
+  border: none;
+}*/
 
 .summarytable td {
   vertical-align: top;
@@ -1413,27 +1451,11 @@ td.finalblow {
   font-weight: normal !important;
 }
 
-div#owners > div {
-  border: 2px red solid;
-  display: inline-block;
-  height: 228px;
-  margin: 5px;
-  text-align: center;
-  vertical-align: top;
-  width: 360px;
-}
-
-div#owners > div > img {
-  height: 128px;
-  width: 128px;
-}
-
-div#owners div.owner-title {
-  display: block;
-  font-size: 2em;
-  font-weight: bold;
-  height:70px;
-  margin: 0.5em 0;
+.owner-title {
+  font-size: 30px;
+  padding-right: 30px;
+  text-align: right;
+  width: 100%;
 }
 
 div#searchresults > table {
