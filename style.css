@@ -346,7 +346,7 @@ div.bar-red {
 }
 
 .kb-table-rows > tbody > tr.kb-table-row-kill:hover {
-  background: #0083cc;
+  background-color: rgba(0, 131, 204, .5);
 }
 
 .kb-table-row-even {
@@ -1271,8 +1271,7 @@ td.finalblow {
 }
 
 .kb-table-rows > tbody > tr.kb-table-row-loss:hover {
-  background: #dd9300;
-  color: #222;
+  background-color: rgba(221, 147, 0, .5);
 }
 
 .kl-detail-shipdetails tr.totalloss > td:first-child {
