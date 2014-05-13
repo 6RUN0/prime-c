@@ -5,7 +5,7 @@ body {
   margin: 0;
   color: #ddd;
   padding: 0;
-  background: url('images/caldaribg.jpg') 50% 0 no-repeat #000;
+  background: url('images/caldaribg.jpg') no-repeat fixed 50% 0 #000;
 }
 
 #header {
@@ -345,10 +345,6 @@ div.bar-red {
   background: rgba(255, 255, 255, .05);
 }
 
-.kb-table-row-even {
-  background: rgba(255, 255, 255, .02);
-}
-
 .kb-table-rows > tbody > tr.kb-table-row-kill:hover {
   background-color: rgba(0, 131, 204, .5);
 }
@@ -368,6 +364,15 @@ div.bar-red {
   -webkit-box-shadow: 0 0 7px #ff0000;
   box-shadow: 0 0 7px #fd5616;
   height: 64px;
+  width: 64px;
+}
+
+td.finalblow {
+  border: none;
+  -moz-box-shadow: 0 0 7px #ff0000;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  text-align: center;
   width: 64px;
 }
 
@@ -1175,10 +1180,6 @@ table.awardbox table {
   width: 100%;
 }
 
-td.finalblow {
-  text-align: center;
-  width: 64px;
-}
 
 .violentsystems td:first-child {
   font-weight: bold;
