@@ -171,6 +171,7 @@ button:active {
 input[type="text"],
 input[type="password"],
 input[type="textarea"],
+input[type="input"],
 select,
 textarea {
   background: rgba(0, 0, 0, .7);
@@ -179,7 +180,8 @@ textarea {
 
 input[type="text"]:focus,
 input[type="password"]:focus,
-input[type="textarea"],
+input[type="textarea"]:focus,
+input[type="input"]:focus,
 textarea:focus {
   -moz-box-shadow: 0 0 5px rgba(255, 255, 255, .5);
   -webkit-box-shadow: 0 0 5px rgba(255, 255, 255, .5);
