@@ -60,7 +60,7 @@
       <div id="profile">{$profile_sql} queries{if $profile_sql_cached} (+{$profile_sql_cached} cached) {/if} SQL time {$sql_time}s, Total time {$profile_time}s</div>
     {/if}
     <div id="footer">
-      <span class="smalltext">Created by <a href="http://gate.eveonline.com/profile/vecati">Vecati</a>, patched by <a href="https://gate.eveonline.com/Profile/Boris%20Blade%20Artrald">Boris Blade Artrald</a></span>
+      <span class="smalltext">Created by <a href="http://gate.eveonline.com/profile/vecati">Vecati</a>, patched by <a href="https://github.com/6RUN0">boris_t</a>.</span>
     </div>
   </div></div> <!-- /.section /#bodybox-wrapper -->
 </body>
