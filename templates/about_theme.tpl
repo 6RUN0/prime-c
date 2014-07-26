@@ -3,7 +3,7 @@
   <div class="block-header2">Theme: Prime</div>
 <p>
 	<a href="http://gate.eveonline.com/profile/vecati">
-		<img src="{$theme_url}/images/theme.png" alt="Prime by Vecati" />
+		<img src="{$theme_url}/img/theme.png" alt="Prime by Vecati" />
 	</a>
 </p>
   <div class="mod_name">{$themeInfo.name} created by <a href="http://gate.eveonline.com/profile/vecati">Vecati</a>, patched by <a href="https://github.com/6RUN0">boris_t</a>.</div>
