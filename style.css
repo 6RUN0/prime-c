@@ -129,7 +129,7 @@ textarea {
 input[type="submit"],
 input[type="reset"],
 button {
-  background: rgba(58, 115, 142, 0.8);
+  background: rgba(58, 115, 142, .8);
   border: 1px solid #3a738e;
   -moz-box-shadow: 0 1px 5px #3a738e;
   -webkit-box-shadow: 0 1px 5px #3a738e;
@@ -423,18 +423,7 @@ td.battleship {
   text-align: center;
 }
 
-.kl-kill-null, .kl-loss-null {
-}
-
-td.kl-kill-null-bg {
-  background: #030;
-}
-
-td.kl-loss-null-bg {
-  background: #300;
-}
-
-td.kl-kill {
+.kl-kill {
   color: #8c8229;
   font-weight: bold;
 }
@@ -1300,4 +1289,34 @@ div#searchresults > table {
 div.login table td:first-child {
   width: 160px;
   font-weight: bold;
+}
+
+/* Most Expensive Kills */
+.mostexp-kill {
+  color: #8c8229;
+}
+
+.mostexp-loss {
+  color: #a6260d;
+}
+
+.mostexp-nullsec {
+  color: #8c8229;
+}
+
+.mostexp-lowsec {
+  color: #d38a33;
+}
+
+.mostexp-highsec {
+  color: #23b423;
+}
+
+/* Combined Fleet Battle Overview */
+.br-destroyed:nth-child(2n) {
+  background: rgba(166, 38, 13, .3);
+}
+
+.br-destroyed:nth-child(2n+1) {
+  background: rgba(166, 38, 13, .2);
 }

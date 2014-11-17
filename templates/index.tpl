@@ -5,8 +5,8 @@
   <meta name="description" content="EDK Killboard - {$config->get('cfg_kbtitle')}" />
   <meta name="keywords" content="EDK, killboard, {$config->get('cfg_kbtitle')}, {if $kb_owner}{$kb_owner}, {/if}Eve-Online, killmail" />
   <title>{$kb_title}</title>
+  {$page_headerlines}
   <link rel="stylesheet" type="text/css" href="{$theme_url}/{$style}.css" />
-{$page_headerlines}
   <script type="text/javascript" src="{$kb_host}/themes/generic.js"></script>
 </head>
 <body {if isset($on_load)}{$on_load}{/if}>
