@@ -297,7 +297,7 @@ div.bar-red {
 }
 
 .finalblow {
-  border: 1px solid #a6260d;
+  border: 1px solid rgba(208, 160, 104, .5);
   height: 64px;
   width: 64px;
 }
